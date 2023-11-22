@@ -7,15 +7,12 @@
 body{
   font-family: Arial;
   font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vh;
   color: #fff;
   background: rgb(63,94,251);
- background: radial-gradient(circle, rgb(28, 43, 116) 30%, rgba(252,70,107,1) 100%);
+  /*background: radial-gradient(circle, red,blue 100%);*/
 }
 
+/*======= TODO =====*/
 input{
   height: 35px;
   width: 200px;
@@ -27,17 +24,39 @@ button{
   width: 40px;
 }
 
-.todo-block{
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.todo-bar{
+  display: flex;
+  }
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card{
   background-color: #fff;
   color: #151515;
   font-size: 19px;
   margin-top: 20px;
   border-radius: 10px;
-  min-height: 100px;
+  height: 100px;
+  width: 100px;
 }
 
-.todo-block p{
+.card p{
   margin-left: 5px;
   margin-top: 10px;
   
 }
+
+
