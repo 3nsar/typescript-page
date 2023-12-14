@@ -36,16 +36,16 @@ button{
 
 .cards-container{
   display: grid;
-  grid-template-columns: repeat(3,100px);
-  column-gap: 20px;
+  grid-template-columns: repeat(3,150px);
+  column-gap: 25px;
   row-gap: 20px;
   width: 100%;
   justify-content: center;
 }
 
 .card{
-  background-color: #fff;
-  color: #151515;
+  background-color: #100f0f;
+  color: #e6e6e6;
   font-size: 19px;
   margin-top: 20px;
   border-radius: 10px;
